@@ -1,0 +1,33 @@
+{
+  "deck_slots": {
+    "A3": "opentrons_flex_trash",
+    "B2": "corning_96_wellplate_360ul_flat",
+    "C1": "flex_96_tiprack_1000ul",
+    "D1": "nest_12_reservoir_15ml",
+    "off_deck_reader": "plate_reader_station"
+  },
+  "hash_id": "sha256:aff3f51d72a2f7b719e23fdd4a3bd004",
+  "id": "wur_flex_bca",
+  "role_constraints": {
+    "0": "flex_96_tiprack_1000ul",
+    "1": "nest_12_reservoir_15ml",
+    "2": "corning_96_wellplate_360ul_flat",
+    "3": "opentrons_flex_trash",
+    "4": "plate_reader_station"
+  },
+  "role_names": {
+    "0": "tip_rack",
+    "1": "source_reservoir",
+    "2": "dest_plate",
+    "3": "trash",
+    "4": "reader_slot"
+  },
+  "roles": {
+    "0": "C1",
+    "1": "D1",
+    "2": "B2",
+    "3": "A3",
+    "4": "off_deck_reader"
+  },
+  "version": "1.0.0"
+}

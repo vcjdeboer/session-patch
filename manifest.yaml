@@ -1,0 +1,25 @@
+manifestVersion: 1
+name: "@vcjdeboer/session-patch"
+version: "2026.07.10.1"
+description: "The PyLabRobot Patch protocol in swamp: turn a lab protocol's scientific INTENT into a sealed, canonical, citable IDENTITY, then lower that one intent onto two PLR drivers. `seal` freezes a `.patch.yaml` into a content-addressed bytestring and records the 64-hex patch sha (the identity you cite) plus its four sealed artifacts (patch/ump/syx/manifest) as a typed resource — the exact bytes of an intent, pinned and REPRODUCIBLE. `run` lowers ONE sealed intent through a chosen driver (`plr-legacy` or `plr-v1b1`) and records the run (status, invocations, device calls) plus the full NDJSON event stream — the PROVENANCE of how an intent became device calls. `resource_model` captures the deck layout (slots + role->labware bindings, content-addressed) a run binds to. The thesis: the SAME sealed sha, run through both drivers, lowers to device-appropriate calls that differ (`RoleRef(role_id=N)` under v1b1 vs `role:N` under legacy) — abstraction at the protocol/intent layer, transposed per device. Written in TypeScript; identity is byte-exact and the two-driver run is reproduced call-for-call."
+repository: "https://github.com/vcjdeboer/session-patch"
+
+paths:
+  base: manifest
+
+models:
+  - session_patch.ts
+
+additionalFiles:
+  - README.md
+  - LICENSE.md
+
+labels:
+  - protocol
+  - reproducibility
+  - provenance
+  - identity
+  - pylabrobot
+  - lab-automation
+  - agent-authored
+  - data-science
