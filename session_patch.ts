@@ -385,7 +385,7 @@ async function refToken(ref: string): Promise<string> {
 /** The session-patch model definition. */
 export const model = {
   type: "@vcjdeboer/session-patch",
-  version: "2026.07.10.1",
+  version: "2026.07.16.1",
   globalArguments: GlobalArgsSchema,
   resources: {
     "patch": {
